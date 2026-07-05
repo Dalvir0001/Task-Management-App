@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 
 const protect = require("../middleware/authMiddleware");
-const { createTask } = require("../controllers/taskController");
+const { getProfile } = require("../controllers/userController");
 
-router.post("/", protect, createTask);
+router.get("/profile", protect, getProfile);
 
 module.exports = router;

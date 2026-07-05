@@ -20,7 +20,7 @@ function Login() {
                     password,
                 }
             );
-
+            localStorage.setItem("token", response.data.token);
             alert(response.data.message);
 
         } catch (error) {
