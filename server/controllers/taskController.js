@@ -4,7 +4,7 @@ const getTasks = async (req, res) => {
     try {
         const tasks = await Task.find({
             user: req.user.id,
-        });
+        }).sort({ createdAt: -1 });
 
         res.status(200).json(tasks);
 
