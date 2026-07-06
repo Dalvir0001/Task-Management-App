@@ -1,56 +1,135 @@
-# Taskly - MERN Task Manager
+# 📋 Taskly - Task Management App
 
-A modern Task Management application built with the MERN Stack.
+A full-stack MERN Task Management application that helps users organize daily tasks efficiently. The application includes secure JWT authentication, task management features, search functionality, and a modern responsive UI.
 
-## Features
+## 🌐 Live Demo
 
-- User Authentication (JWT)
-- Register & Login
-- Protected Routes
-- Create Tasks
+Frontend: https://task-management-app-theta-two.vercel.app
+
+Backend API: https://task-management-app-v8h6.onrender.com
+
+---
+
+## ✨ Features
+
+- User Registration
+- Secure Login using JWT Authentication
+- Add Tasks
 - Edit Tasks
 - Delete Tasks
-- Mark Complete/Pending
+- Mark Tasks as Completed
 - Search Tasks
+- Loading Indicators
 - Responsive Design
-- Modern Glassmorphism UI
-- Toast Notifications
+- Protected Dashboard
+- MongoDB Atlas Database
 
-## Tech Stack
+---
 
-Frontend
-- React
+## 🛠 Tech Stack
+
+### Frontend
+
+- React.js
+- Vite
 - Tailwind CSS
 - Axios
 - React Router
 - Framer Motion
 - React Hot Toast
 
-Backend
+### Backend
+
 - Node.js
 - Express.js
-- MongoDB
+- MongoDB Atlas
 - Mongoose
-- JWT
-- bcrypt
+- JWT Authentication
+- bcrypt.js
+- dotenv
 
-## Installation
+---
 
-Frontend
+## 📂 Project Structure
 
+```
+Task-Management-App
+│
+├── Client
+│   ├── src
+│   ├── public
+│   └── ...
+│
+├── server
+│   ├── controllers
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   └── server.js
+│
+└── README.md
+```
+
+---
+
+## 🚀 Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/Dalvir0001/Task-Management-App.git
+```
+
+### Install Frontend
+
+```bash
+cd Client
 npm install
 npm run dev
+```
 
-Backend
+### Install Backend
 
+```bash
+cd server
 npm install
-npm run server
+npm start
+```
 
-## Future Improvements
+---
 
-- Due Dates
-- Task Priorities
-- Categories
-- User Profile
-- Dark Mode
-- Drag & Drop
+## 🔐 Environment Variables
+
+### Client (.env)
+
+```env
+VITE_API_URL=YOUR_BACKEND_URL/api
+```
+
+### Server (.env)
+
+```env
+MONGO_URI=YOUR_MONGODB_URI
+JWT_SECRET=YOUR_SECRET_KEY
+```
+
+---
+
+## 📸 Screenshots
+
+Coming Soon...
+
+- Login Page
+- Register Page
+- Dashboard
+- Add Task
+- Search Tasks
+
+---
+
+## 👨‍💻 Author
+
+Dalvir Singh
+
+GitHub:
+https://github.com/Dalvir0001
