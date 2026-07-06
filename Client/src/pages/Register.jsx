@@ -1,4 +1,4 @@
-import axios from "axios";
+import api from "../api/axios";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -96,8 +96,8 @@ function Register() {
         }
         try {
             setIsLoading(true);
-            const response = await axios.post(
-                "http://localhost:5000/api/auth/register",
+            const response = await api.post(
+                "/auth/register",
                 {
                     name,
                     email,
