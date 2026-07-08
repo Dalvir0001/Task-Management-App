@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
+import { GoogleLogin } from "@react-oauth/google";
 
 const Mail = ({ size = 18, className = "" }) => (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -190,6 +191,35 @@ function Login() {
                             </>
                         )}
                     </button>
+
+                    <div className="mt-5">
+                        <GoogleLogin
+                            onSuccess={async (credentialResponse) => {
+                                try {
+                                    const response = await api.post(
+                                        "/auth/google",
+                                        {
+                                            credential: credentialResponse.credential,
+                                        }
+                                    );
+
+                                    localStorage.setItem("token", response.data.token);
+
+                                    toast.success(response.data.message);
+
+                                    navigate("/dashboard");
+
+                                } catch (error) {
+                                    toast.error(
+                                        error.response?.data?.message || "Google Login Failed"
+                                    );
+                                }
+                            }}
+                            onError={() => {
+                                toast.error("Google Login Failed");
+                            }}
+                        />
+                    </div>
 
                     <p className="text-center text-slate-600 mt-6">
                         Don't have an account?{" "}
