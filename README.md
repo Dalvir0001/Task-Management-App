@@ -123,9 +123,17 @@ Coming Soon...
 <img width="1157" height="907" alt="image" src="https://github.com/user-attachments/assets/dfeb045d-a969-4db9-89c9-dcd7aff91dec" />
 
 - Register Page
+<img width="1350" height="912" alt="image" src="https://github.com/user-attachments/assets/f903567c-b64b-41e4-95c0-b3c331c8026a" />
+
 - Dashboard
+<img width="1677" height="902" alt="image" src="https://github.com/user-attachments/assets/0ac1ea70-9624-435c-acf8-edce18956769" />
+
 - Add Task
+<img width="1681" height="911" alt="image" src="https://github.com/user-attachments/assets/04fbcdf2-dff4-4f66-8a4e-63f6eb0e4cec" />
+
 - Search Tasks
+<img width="1670" height="905" alt="image" src="https://github.com/user-attachments/assets/6671c638-18fc-4951-9f20-468d491b2107" />
+
 
 ---
 
