@@ -120,6 +120,8 @@ JWT_SECRET=YOUR_SECRET_KEY
 Coming Soon...
 
 - Login Page
+<img width="1157" height="907" alt="image" src="https://github.com/user-attachments/assets/dfeb045d-a969-4db9-89c9-dcd7aff91dec" />
+
 - Register Page
 - Dashboard
 - Add Task
